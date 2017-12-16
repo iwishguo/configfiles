@@ -1,0 +1,21 @@
+set imap_user='<Your email address>'
+set imap_pass=''
+set folder = imaps://imap.gmail.com/
+set spoolfile = +INBOX
+set record = "+[Gmail]/Sent Mail"
+set postponed = "+[Gmail]/Drafts"
+
+set smtp_url = 'smtps://<Your email address>@smtp.gmail.com'
+set smtp_pass = ''
+set record=""
+set mbox="imaps://imap.gmail.com/[Gmail]/All Mail"
+
+set sort_aux=reverse-last-date-received
+set sort=threads
+set sort_re
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+bind index G imap-fetch-mail
+set editor="vim -c 'set spell'"
+bind pager <Up> previous-line
+bind pager <Down> next-line
