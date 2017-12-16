@@ -59,3 +59,6 @@ map <silent> <leader>; :read !date +\%m/\%d/\%Y<CR>
 "set makeprg=uefi-tools/uefi-build.sh\ d02
 "set makeprg=../uefi-tools/uefi-build.sh\ -c\ LinaroPkg/platforms.config\ d02
 set makeprg=../uefi-tools/uefi-build.sh\ -c\ LinaroPkg/platforms.config\ d02
+
+colorscheme desert
+
