@@ -1,0 +1,38 @@
+[user]
+	name = Heyi Guo
+	email = heyi.guo@linaro.org
+[push]
+	default = simple
+[sendemail]
+  smtpencryption = tls
+  smtpserver = smtp.gmail.com
+  smtpuser = heyi.guo@linaro.org
+  smtpserverport = 587
+#to = edk2-devel@lists.01.org
+  to = Linaro-uefi@lists.linaro.org
+  cc = leif.lindholm@linaro.org
+  cc = ard.biesheuvel@linaro.org
+#cc = graeme.gregory@linaro.org
+
+[format]
+#subjectprefix = edk2] [PATCH
+#subjectprefix = edk2] [RFC
+ 
+[core]
+	editor = vim
+[alias]
+	s = status
+	co = checkout
+[gitreview]
+	username = Heyi
+[gerrit]
+  host=review.linaro.org
+  port=29418
+  project=ci/uefi
+
+[color]
+	ui = auto
+[commit]
+	template = /home/gary/work/patch/edk2/commit.template
+[credential]
+	helper = store
