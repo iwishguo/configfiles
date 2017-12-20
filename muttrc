@@ -16,7 +16,7 @@ set sort_re
 set header_cache = "~/.mutt/cache/headers"
 set message_cachedir = "~/.mutt/cache/bodies"
 bind index G imap-fetch-mail
-set editor="vim -c 'set spell' -c 'set nocindent'"
+set editor="vim -c 'set spell' -c 'set noai nocin nosi inde='"
 bind pager <Up> previous-line
 bind pager <Down> next-line
 bind pager k previous-line
