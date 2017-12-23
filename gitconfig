@@ -8,21 +8,32 @@
 	email = heyi.guo@linaro.org
 [push]
 	default = simple
+[am]
+	keepcr = true
 [sendemail]
   smtpencryption = tls
   smtpserver = smtp.gmail.com
   smtpuser = heyi.guo@linaro.org
   smtpserverport = 587
-#to = edk2-devel@lists.01.org
-  to = Linaro-uefi@lists.linaro.org
-  cc = leif.lindholm@linaro.org
-  cc = ard.biesheuvel@linaro.org
-#cc = graeme.gregory@linaro.org
+  #to = leif.lindholm@linaro.org
+  to = linaro-uefi@lists.linaro.org
+  to = edk2-devel@lists.01.org
+  #to = graeme.gregory@linaro.org
+  #cc = ard.biesheuvel@linaro.org
+  #cc = graeme.gregory@linaro.org
+  #cc = guoheyi@huawei.com
+  #cc = wanghuiqiang@huawei.com
+  #cc = huangming23@huawei.com
+  #cc = zhangjinsong2@huawei.com
+  #cc = mengfanrong@huawei.com
+  #cc = waip23@126.com
+  #cc =
+  #to = edk2-devel@lists.01.org
 
 [format]
 #subjectprefix = edk2] [PATCH
 #subjectprefix = edk2] [RFC
- 
+
 [core]
 	editor = vim
 	whitespace = cr-at-eol
@@ -39,6 +50,6 @@
 [color]
 	ui = auto
 [commit]
-	template = /home/gary/work/patch/edk2/commit.template
+	template = ~/configfiles/edk2-commit-template
 [credential]
 	helper = store
