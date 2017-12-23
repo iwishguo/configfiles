@@ -10,6 +10,7 @@ pushd /
 
 find $CODE                         \
        -type f                     \
+       ! -path "$CODE/*cscope*"    \
        ! -path "$CODE/.git*"       \
        ! -path "$CODE/build/*"     \
        > $CODE/cscope.files
