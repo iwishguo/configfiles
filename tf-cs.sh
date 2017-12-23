@@ -8,9 +8,10 @@ CODE=`pwd`
 
 pushd /
 
-find $CODE                    \
-       -type f                \
-       ! -path $CODE/build    \
+find $CODE                         \
+       -type f                     \
+       ! -path "$CODE/.git*"       \
+       ! -path "$CODE/build/*"     \
        > $CODE/cscope.files
 
 popd
