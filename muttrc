@@ -1,4 +1,4 @@
-source mutt-id
+source ~/.mutt/mutt-id
 set folder = imaps://imap.gmail.com/
 set spoolfile = +INBOX
 set record = "+[Gmail]/Sent Mail"
