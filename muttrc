@@ -1,12 +1,9 @@
-set imap_user='<Your email address>'
-set imap_pass=''
+source mutt-id
 set folder = imaps://imap.gmail.com/
 set spoolfile = +INBOX
 set record = "+[Gmail]/Sent Mail"
 set postponed = "+[Gmail]/Drafts"
 
-set smtp_url = 'smtps://<Your email address>@smtp.gmail.com'
-set smtp_pass = ''
 set record=""
 set mbox="imaps://imap.gmail.com/[Gmail]/All Mail"
 
@@ -17,6 +14,8 @@ set header_cache = "~/.mutt/cache/headers"
 set message_cachedir = "~/.mutt/cache/bodies"
 bind index G imap-fetch-mail
 set editor="vim -c 'set spell' -c 'set noai nocin nosi inde='"
+set alias_file=~/.mutt/aliases
+source $alias_file
 bind pager <Up> previous-line
 bind pager <Down> next-line
 bind pager k previous-line

@@ -1,0 +1,4 @@
+set imap_user='<Your email address>'
+set imap_pass=''
+set smtp_url = 'smtps://<Your email address>@smtp.gmail.com'
+set smtp_pass = ''
