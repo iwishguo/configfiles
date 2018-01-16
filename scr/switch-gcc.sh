@@ -20,7 +20,7 @@ for link in ${LINKS[@]}; do
   TARGET=${link}-$GCC_VERSION
   if [ ! -f $TARGET ]; then
     echo "file \"$TARGET\" does not exist!"
-    exit 1
+    continue
   fi
   ln -sf $TARGET $link
 done
