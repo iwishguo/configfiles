@@ -11,8 +11,14 @@ set ignorecase
 set incsearch
 "set nowrapscan
 set smartindent
-set mp=./sct.sh
+set tw=80
 "set mp='build -a AARCH64 -b RELEASE -t ARMGCC -p SctPkg/UEFI/UEFI_SCT.dsc -m SctPkg/TestCase/UEFI/EFI/BootServices/ImageServices/BlackBoxTest/Dependency/ValidHiiImage1/ValidHiiImage1.inf'
+"set mp=./sct.sh
+"set makeprg="../estuary/build-grub.sh1"
+"set makeprg=uefi-tools/uefi-build.sh\ d02
+"set makeprg=../uefi-tools/uefi-build.sh\ -c\ LinaroPkg/platforms.config\ d02
+"set makeprg=../uefi-tools/uefi-build.sh\ -c\ LinaroPkg/platforms.config\ d02
+
 
 syntax on
 
@@ -54,11 +60,6 @@ set wildignore+=Build/*
 colorscheme torte
 set guifont=Monospace\ 11
 map <silent> <leader>; :read !date +\%m/\%d/\%Y<CR>
-
-"set makeprg="../estuary/build-grub.sh1"
-"set makeprg=uefi-tools/uefi-build.sh\ d02
-"set makeprg=../uefi-tools/uefi-build.sh\ -c\ LinaroPkg/platforms.config\ d02
-set makeprg=../uefi-tools/uefi-build.sh\ -c\ LinaroPkg/platforms.config\ d02
 
 colorscheme desert
 
