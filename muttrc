@@ -8,7 +8,8 @@ set record=""
 set mbox="imaps://imap.gmail.com/[Gmail]/All Mail"
 
 set sort_aux=reverse-last-date-received
-set sort=threads
+#set sort=threads
+source ~/.mutt/sort-date.rc
 set sort_re
 set header_cache = "~/.mutt/cache/headers"
 set message_cachedir = "~/.mutt/cache/bodies"
