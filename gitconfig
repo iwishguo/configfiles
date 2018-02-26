@@ -2,7 +2,7 @@
 	s = status
 	blog = log --graph --pretty=format:\"%h %CRed%cn%CReset %CGreen%ci%Creset %d %s\"
 	co = checkout
-	edk2-fp = format-patch --stat=1000 --stat-graph-width=20
+	edk2-fp = format-patch --notes -O"~/configfiles/edk2.diff.order" --stat=1000 --stat-graph-width=20
 [user]
 	name = Heyi Guo
 	email = heyi.guo@linaro.org
