@@ -74,7 +74,7 @@ if has("cscope")
   set nocsverb
   " add any database in current directory
   if filereadable("cscope.out")
-      cs add cscope.out
+      cs add cscope.out . -C
   endif
   set csverb
 endif
