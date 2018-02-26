@@ -31,8 +31,8 @@ nmap <silent> <leader>FE :Sexplore!<cr>
 nmap <silent> <leader>fe :Explore<cr> 
 nmap <silent> <leader>cs <ESC>^i#<ESC>
 nmap <silent> <leader>cc <ESC>^i//<ESC>
-nmap <silent> <leader>dg ODEBUG ((EFI_D_ERROR, "[%a:%d] - \n", __FUNCTION__, __LINE__));<ESC>
-nmap <silent> <leader>dr ODEBUG ((EFI_D_ERROR, "[%a:%d] - %r\n", __FUNCTION__, __LINE__, Status));<ESC>
+nmap <silent> <leader>dg ODEBUG ((DEBUG_ERROR, "[%a:%d] - \n", __FUNCTION__, __LINE__));<ESC>
+nmap <silent> <leader>dr ODEBUG ((DEBUG_ERROR, "[%a:%d] - %r\n", __FUNCTION__, __LINE__, Status));<ESC>
 nmap <silent> <C-N> <ESC>:tabnew<CR>
 " map Y "+y
 map Y "*y
