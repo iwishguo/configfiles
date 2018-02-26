@@ -35,7 +35,7 @@
 #subjectprefix = edk2] [RFC
 
 [core]
-	editor = "vim -c 'set spell' -c 'set tw=70'"
+	editor = "vim -c 'set spell' -c 'set tw=70' -c 'set nocindent' -c 'set nosmartindent'"
 	whitespace = cr-at-eol
 [alias]
 	s = status
