@@ -16,7 +16,7 @@
   smtpuser = heyi.guo@linaro.org
   smtpserverport = 587
   #to = leif.lindholm@linaro.org
-  to = linaro-uefi@lists.linaro.org
+  #to = linaro-uefi@lists.linaro.org
   to = edk2-devel@lists.01.org
   #to = graeme.gregory@linaro.org
   #cc = ard.biesheuvel@linaro.org
