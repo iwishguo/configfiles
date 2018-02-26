@@ -51,5 +51,3 @@
 	ui = auto
 [commit]
 	template = ~/configfiles/edk2-commit-template
-[credential]
-	helper = store
