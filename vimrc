@@ -87,7 +87,7 @@ nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR>
 "nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-@>f :cs find f 
 "Add Ctrl-P for find file too, which is from the habit for Ctrl-P plugin
-nmap <C-P> :cs find f
+nmap <C-P> :cs find f 
 nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
