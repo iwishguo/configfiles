@@ -92,7 +92,7 @@ nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 "Toggle C indent for copy/paste
-map <C-i> :set cindent!<cr>:set smartindent!<cr>
+"map <C-i> :set cindent!<cr>:set smartindent!<cr>
 "Toggle expandtab for non EFI code
-map <C-t> :set expandtab!<cr>
+"map <C-t> :set expandtab!<cr>
 
