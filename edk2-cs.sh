@@ -9,21 +9,36 @@ CODE=`pwd`
 pushd /
 
 find $CODE                         \
-       -type f                     \
-       ! -path "$CODE/*cscope*"    \
-       ! -path "$CODE/.git*"       \
-       ! -path "$CODE/Tools/.git*"       \
-       ! -path "$CODE/HwPkg/.git*"       \
-       ! -path "$CODE/OpenPlatformPkg/.git*"       \
-       ! -path "$CODE/edk2-platforms/.git*"       \
-       ! -path "$CODE/edk2-non-osi/.git*"       \
-       ! -path "$CODE/uefi-tools/.git*"       \
-       ! -path "$CODE/TrustedFirmware*"       \
-       ! -path "$CODE/tf*"       \
-       ! -path "$CODE/EdkCompatibilityPkg*"       \
-       ! -path "$CODE/Build/*"     \
-       ! -path "$CODE/Conf/*"     \
-       ! -path "$CODE/CryptoPkg/Library/OpensslLib/openssl*"     \
+       -path $CODE/.git -prune -o      \
+       -path $CODE/Tools/.git -prune -o      \
+       -path $CODE/HwPkg/.git -prune -o      \
+       -path $CODE/OpenPlatformPkg/.git -prune -o      \
+       -path $CODE/edk2-platforms/.git -prune -o      \
+       -path $CODE/edk2-non-osi/.git -prune -o      \
+       -path $CODE/uefi-tools/.git -prune -o      \
+       -path $CODE/TrustedFirmware -prune -o      \
+       -path $CODE/tf -prune -o      \
+       -path $CODE/EdkCompatibilityPkg -prune -o      \
+       -path $CODE/Build -prune -o    \
+       -path $CODE/Conf -prune -o    \
+       -path $CODE/CryptoPkg/Library/OpensslLib/openssl -prune -o    \
+       \( \
+         -type f \
+         ! -path "$CODE/*cscope*"    \
+         \( \
+           -iname *.c -o \
+           -iname *.h -o \
+           -iname *.s -o \
+           -iname *.inf -o \
+           -iname *.dsc -o \
+           -iname *.fdf -o \
+           -iname *.dec -o \
+           -iname *.txt -o \
+           -iname *.vfr -o \
+           -iname *.uni \
+         \) \
+         -print \
+       \) \
        > $CODE/cscope.files
 
 popd
