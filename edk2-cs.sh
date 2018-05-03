@@ -35,6 +35,8 @@ find $CODE                         \
            -iname *.dec -o \
            -iname *.txt -o \
            -iname *.vfr -o \
+           -iname *.asl -o \
+           -iname *.aslc -o \
            -iname *.uni \
          \) \
          -print \
